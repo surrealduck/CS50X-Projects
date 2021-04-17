@@ -44,16 +44,11 @@ int main(int argc, string argv[])
         {
             int yeni_ascii_sayisi = key + ascii_sayisi;
 
-            if (yeni_ascii_sayisi >= 91 && (ascii_sayisi >= 65 && ascii_sayisi <= 90) )
+            if ((yeni_ascii_sayisi >= 91 && (ascii_sayisi >= 65 && ascii_sayisi <= 90)) || (yeni_ascii_sayisi >= 123))
             {
                 yeni_ascii_sayisi = yeni_ascii_sayisi - 26;
             }
-
-            else if ( yeni_ascii_sayisi >= 123)
-            {
-                yeni_ascii_sayisi = yeni_ascii_sayisi - 26;
-            }
-
+            
             printf("%c", yeni_ascii_sayisi);
         }
     }
